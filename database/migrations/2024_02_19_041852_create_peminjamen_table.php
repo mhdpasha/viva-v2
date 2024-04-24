@@ -20,6 +20,7 @@ return new class extends Migration
             $table->date('tanggal_peminjaman');
             $table->date('tanggal_pengembalian')->nullable();
             $table->boolean('history')->nullable();
+            $table->boolean('deleted')->nullable();
             $table->timestamps();
         });
     }
